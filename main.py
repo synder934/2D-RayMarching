@@ -8,7 +8,7 @@ vec = pg.Vector2
 
 FPS = 60
 CIR_RES = 2
-TURN_SPEED = 3
+TURN_SPEED = 5
 FOV = 70
 
 class Player():
@@ -114,7 +114,7 @@ if __name__ == '__main__':
                 elif e.text == 'd':
                     player.rot+= radians(TURN_SPEED)
 
-            
+
         disp.fill((0,0,0))
 
         player.update()
